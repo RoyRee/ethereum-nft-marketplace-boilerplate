@@ -24,7 +24,7 @@ const Application = () => {
   else {
     return (
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <QuickStart />
+        { <QuickStart />}
       </div>
     );
   }
