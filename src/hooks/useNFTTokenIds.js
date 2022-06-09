@@ -21,7 +21,7 @@ export const useNFTTokenIds = (addr) => {
     address: addr,
     limit: 10,
   });
-
+  {console.log(data)}
   useEffect(async () => {
     if (data?.result) {
       const NFTs = data.result;

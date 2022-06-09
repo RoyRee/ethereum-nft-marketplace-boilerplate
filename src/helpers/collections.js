@@ -65,6 +65,15 @@ export const networkCollections = {
       addrs: "0x1A92f7381B9F03921564a437210bB9396471050C",
     },
   ],
+  "0x4": [
+    {
+      image:
+        "https://ipfs.io/ipfs/bafybeigcgw3ca5zh3uueti46dkn3kkscx4vaijjhlk7qcajhvs4l6dtbra",
+      name: "Zoro",
+      addrs: "0x36948a60f679e24BD7603D6847FA698D2244CC5d",
+    },
+  ]
 };
 
 export const getCollectionsByChain = (chain) => networkCollections[chain];
+
