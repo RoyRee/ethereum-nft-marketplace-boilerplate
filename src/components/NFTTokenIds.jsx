@@ -62,6 +62,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
   const [visible, setVisibility] = useState(false);
   const [nftToBuy, setNftToBuy] = useState(null);
   const [loading, setLoading] = useState(false);
+
   const contractProcessor = useWeb3ExecuteFunction();
   const { chainId, marketAddress, contractABI, walletAddress } =
     useMoralisDapp();
@@ -226,6 +227,7 @@ function NFTTokenIds({ inputValue, setInputValue }) {
                   <Tooltip title="View Collection">
                     <RightCircleOutlined
                       onClick={() => setInputValue(nft?.addrs)}
+                      
                     />
                   </Tooltip>,
                 ]}

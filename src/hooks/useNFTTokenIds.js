@@ -1,4 +1,4 @@
-import { ContactsOutlined } from "@ant-design/icons";
+import { ContactsOutlined, ControlOutlined } from "@ant-design/icons";
 import { useMoralisDapp } from "providers/MoralisDappProvider/MoralisDappProvider";
 import { useEffect, useState } from "react";
 import { useMoralisWeb3Api, useMoralisWeb3ApiCall } from "react-moralis";
@@ -11,6 +11,8 @@ export const useNFTTokenIds = (addr) => {
   const [NFTTokenIds, setNFTTokenIds] = useState([]);
   const [totalNFTs, setTotalNFTs] = useState();
   const [fetchSuccess, setFetchSuccess] = useState(true);
+ 
+
   const {
     fetch: getNFTTokenIds,
     data,
@@ -21,8 +23,11 @@ export const useNFTTokenIds = (addr) => {
     address: addr,
     limit: 10,
   });
-  {console.log(data)}
-  useEffect(async () => {
+  
+ {console.log(data)}
+
+   useEffect(async () => {
+  
     if (data?.result) {
       const NFTs = data.result;
       setTotalNFTs(data.total);
