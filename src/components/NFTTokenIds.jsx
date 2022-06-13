@@ -84,6 +84,8 @@ function NFTTokenIds({ inputValue, setInputValue }) {
       "confirmed",
     ])
   );
+
+  console.log(fetchMarketItems);
   const purchaseItemFunction = "createMarketSale";
   const NFTCollections = getCollectionsByChain(chainId);
 
