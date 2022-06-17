@@ -82,6 +82,12 @@ export const networkCollections = {
       name: "Zoro Goreli",
       addrs: "0x36948a60f679e24BD7603D6847FA698D2244CC5d",
     },
+    {
+      image:
+        "https://ipfs.moralis.io:2053/ipfs/QmdQTdMdwGrzQUkKf7TerHJgMjjcG4NEn1ZPN6egRyhCnX",
+      name: "Zoro New",
+      addrs: "0xabFC9eC1402950815A0BfA43d7Aeb67054fE3a60",
+    },
   ]
 };
 
